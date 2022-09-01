@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ACA COMIENZA EL CSS PARA LA NAVBAR */
+
+
+.bar_nav{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.logo_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.lista_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #252525;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:x-large;
+    width: 100vw;
+}
+
+.login{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover{
+    background-color: #6664ff;
+    padding: 50px;
+}
+
+.register:hover{
+    background-color: #6664ff;
+    padding: 50px;
+}
+
+/* ACA COMIENZA EL CSS PARA LA SECTION 1 */
+
+.section_1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cat_astronauta{
+    height: 500px;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    
+}
+
+.div_text{
+   height: auto;
+   display: flex;  
+   margin-top: 190px;
+   
+
+}
+
+.text_fijo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    display: block;
+    align-items: center;
+    list-style-type: none;
+    
+    
+}
+
+.text_movil{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #6664ff;
+    display: flex;
+    align-items: center;
+        
+}
+
+.text_movil1{
+    animation: texto_animado;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+/*.text_movil1:hover{
+    animation-play-state: paused;
+
+}*/
+
+.text_movil2{
+    animation: texto_animado;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
+}
+
+/*.text_movil2:hover{
+    animation-play-state: paused;
+
+}*/
+
+.nosotros,
+.nft,
+.ecosistema,
+.login,
+.register{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@keyframes texto_animado{
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(-1000);
+    }
+}
+
+/* ACA COMIENZA EL CSS PARA LA SECTION 2*/
+
+.content-all{
+    width: 50%;
+    margin: auto;
+    perspective: 1500px;
+    position: relative;
+    margin-top: 50px;
+    margin-top: 100px;
+   
+}
+
+.content-carrousel{
+    width: 90%;
+    height: 300px;
+    position: absolute;
+    animation: rotar 20s infinite linear;
+    transform-style: preserve-3d;
+   
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+  
+}
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+
+
+.content-carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(2){transform: rotateY(90deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(3){transform: rotateY(180deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(4){transform: rotateY(270deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(5){transform: rotateY(360deg) translateZ(300px);}
+
+
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+ 
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }
+    
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+/* ACA COMIENZA EL CSS PARA LA SECTION 3*/
+
+.section_3{
+    margin-top: 650px;
+}
+
+.div_caja{
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja_ppal img{
+    max-width: 180px;
+    max-height: 90px; 
+   
+}
+
+img{
+    object-fit: auto;
+    
+}
+
+.caja_ppal img:hover{
+    cursor: pointer;
+    transform: scale(1.8);
+   
+}
+
+.section_3 h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large
+    
+}
+
+/* ACA COMIENZA EL CSS PARA LA SECTION 4*/
+
+.section_4{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large
+}
+
+
+/* ACA COMIENZA EL CSS PARA LA SECTION 5 FORMULARIO*/
+
+.contacto{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:medium;
+}
